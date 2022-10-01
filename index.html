@@ -12,6 +12,7 @@
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
         crossorigin="anonymous"></script>
         <script>
+                        var slideAudio=new Audio("slide.wav");
             var puzzData=[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1];
             function loadPuzzle()
             {
@@ -131,6 +132,8 @@
                 }
                 //put trtd eement in puzzContainer
                 document.getElementById("puzzContainer").innerHTML=trtd;
+                     // play box-slide sound.
+                    slideAudio.play();
                  }
                  else
                  {
